@@ -24,6 +24,9 @@ VALUES
 (9, 'Rafael', 31, 3500.00, 'RH', NULL),
 (10, 'Larissa', 24, 2300.00, 'TI', '88999990010');
 
+-- Query 1: Employee and salary analysis
+-- Filter employees earning more than 2500
+-- Group results by department
 
 SELECT 
 departamento AS Departamento,
