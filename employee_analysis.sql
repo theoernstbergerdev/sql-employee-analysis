@@ -2,7 +2,7 @@ CREATE DATABASE empresa;
 USE empresa;
 
 CREATE TABLE funcionarios (
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50),
     idade INT,
     salario DECIMAL(10,2),
@@ -13,16 +13,16 @@ CREATE TABLE funcionarios (
 INSERT INTO funcionarios 
 (id, nome, idade, salario, departamento, telefone)
 VALUES
-(1, 'João', 25, 2500.00, 'TI', '88999990001'),
-(2, 'Maria', 30, 3200.00, 'RH', '88999990002'),
-(3, 'Pedro', 28, 2800.00, 'TI', NULL),
-(4, 'Ana', 35, 4500.00, 'Financeiro', '88999990004'),
-(5, 'Carlos', 22, 2100.00, 'TI', NULL),
-(6, 'Julia', 29, 3000.00, 'RH', '88999990006'),
-(7, 'Lucas', 40, 5200.00, 'Financeiro', NULL),
-(8, 'Beatriz', 26, 2700.00, 'TI', '88999990008'),
-(9, 'Rafael', 31, 3500.00, 'RH', NULL),
-(10, 'Larissa', 24, 2300.00, 'TI', '88999990010');
+('João', 25, 2500.00, 'TI', '88999990001'),
+('Maria', 30, 3200.00, 'RH', '88999990002'),
+('Pedro', 28, 2800.00, 'TI', NULL),
+('Ana', 35, 4500.00, 'Financeiro', '88999990004'),
+('Carlos', 22, 2100.00, 'TI', NULL),
+('Julia', 29, 3000.00, 'RH', '88999990006'),
+('Lucas', 40, 5200.00, 'Financeiro', NULL),
+('Beatriz', 26, 2700.00, 'TI', '88999990008'),
+('Rafael', 31, 3500.00, 'RH', NULL),
+('Larissa', 24, 2300.00, 'TI', '88999990010');
 
 -- Query 1: Employee and salary analysis
 -- Filter employees earning more than 2500
